@@ -1,16 +1,17 @@
 import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
-class ContactCard extends StatelessWidget {
-  final User user;
+class ReservationCard extends StatelessWidget {
+  final Reservation reservation;
 
-  const ContactCard({
+  const ReservationCard({
     super.key,
-    required this.user,
+    required this.reservation,
   });
 
   @override
   Widget build(BuildContext context) {
+    String subtitle = '${reservation.startTime} - ${reservation.endTime}';
     return Card(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -18,11 +19,11 @@ class ContactCard extends StatelessWidget {
           ListTile(
             leading: const Image(
               image: NetworkImage(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
               ),
             ),
-            title: Text('${user.firstName} ${user.lastName}'),
-            subtitle: const Text('SUBTITLE GOES HERE'),
+            title: Text(reservation.aircraft.name),
+            subtitle: Text(subtitle),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,

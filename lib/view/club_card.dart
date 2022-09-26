@@ -1,12 +1,12 @@
 import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
-class ContactCard extends StatelessWidget {
-  final User user;
+class ClubCard extends StatelessWidget {
+  final Club club;
 
-  const ContactCard({
+  const ClubCard({
     super.key,
-    required this.user,
+    required this.club,
   });
 
   @override
@@ -18,11 +18,11 @@ class ContactCard extends StatelessWidget {
           ListTile(
             leading: const Image(
               image: NetworkImage(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
               ),
             ),
-            title: Text('${user.firstName} ${user.lastName}'),
-            subtitle: const Text('SUBTITLE GOES HERE'),
+            title: Text(club.name),
+            subtitle: Text(club.location),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,

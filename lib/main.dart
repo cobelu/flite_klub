@@ -1,4 +1,5 @@
 import 'package:flite_klub/model/models.dart';
+import 'package:flite_klub/view/contact_card.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -28,7 +29,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
 
   final List<Widget> _widgetOptions = <Widget>[
-    ReservationPage(),
+    ReservationsPage(),
     ClubPage(),
     AccountPage(),
   ];
@@ -44,6 +45,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('FliteKlub'),
+        backgroundColor: Colors.amber[900],
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -71,8 +73,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 
-class ReservationPage extends Container {
-  ReservationPage({super.key});
+class ReservationsPage extends Container {
+  ReservationsPage({super.key});
 
   final List<Aircraft> entries = <Aircraft>[
     Aircraft.example(),
@@ -81,14 +83,15 @@ class ReservationPage extends Container {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        padding: const EdgeInsets.all(20),
-        itemCount: entries.length,
-        itemBuilder: (BuildContext context, int index) {
-          return ListTile(
-            title: Text('Reservation ${entries[index].toString()}'),
-            onTap: () {},
-          );
-        });
+      padding: const EdgeInsets.all(20),
+      itemCount: entries.length,
+      itemBuilder: (BuildContext context, int index) {
+        return ListTile(
+          title: Text('Reservation ${entries[index].toString()}'),
+          onTap: () => Navigator.of(context).push(_createRoute()),
+        );
+      },
+    );
   }
 }
 
@@ -102,37 +105,73 @@ class ClubPage extends Container {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        padding: const EdgeInsets.all(20),
-        itemCount: entries.length,
-        itemBuilder: (BuildContext context, int index) {
-          return ListTile(
-            title: Text('Club ${entries[index].toString()}'),
-            onTap: () {},
-          );
-        });
+      padding: const EdgeInsets.all(20),
+      itemCount: entries.length,
+      itemBuilder: (BuildContext context, int index) {
+        return ListTile(
+          title: Text('Club ${entries[index].toString()}'),
+          onTap: () {},
+        );
+      },
+    );
   }
 }
 
 class AccountPage extends Container {
   AccountPage({super.key});
 
-  final List<String> entries = <String>[
-    'A',
-    'B',
-    'C',
-    'D',
-  ];
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ContactCard(
+          user: User.example(),
+        ),
+        Column(
+          children: const [
+            Text('Something'),
+            Text('Something else'),
+            Text('Yet another thing'),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+Route _createRoute() {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => ReservationPage(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      const begin = Offset(0.0, 1.0);
+      const end = Offset.zero;
+      const curve = Curves.ease;
+
+      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+      return SlideTransition(
+        position: animation.drive(tween),
+        child: child,
+      );
+    },
+  );
+}
+
+class ReservationPage extends Container {
+  ReservationPage({super.key});
+
+  final Reservation _reservation = Reservation.example();
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        padding: const EdgeInsets.all(20),
-        itemCount: entries.length,
-        itemBuilder: (BuildContext context, int index) {
-          return ListTile(
-            title: Text('Detail ${entries[index]}'),
-            onTap: () {},
-          );
-        });
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(_reservation.aircraft.name),
+        backgroundColor: Colors.amber[900],
+      ),
+      body: Center(
+        child: Text('${_reservation.startTime} - ${_reservation.endTime}'),
+      ),
+    );
   }
 }
