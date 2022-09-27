@@ -149,8 +149,8 @@ class Reservation {
       id: 1,
       aircraft: Aircraft.example(),
       member: User.example(),
-      startTime: DateTime.now().add(const Duration(hours: 1)),
-      endTime: DateTime.now().subtract(const Duration(hours: 1, minutes: 30)),
+      startTime: DateTime.now().subtract(const Duration(hours: 1, minutes: 30)),
+      endTime: DateTime.now().add(const Duration(hours: 1)),
     );
   }
 }
