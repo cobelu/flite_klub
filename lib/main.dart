@@ -1,9 +1,7 @@
 import 'package:flite_klub/view/account_screen.dart';
-import 'package:flite_klub/view/add_club_screen.dart';
 import 'package:flite_klub/view/clubs_screen.dart';
 import 'package:flite_klub/view/constants.dart';
 import 'package:flite_klub/view/reservations_screen.dart';
-import 'package:flite_klub/view/transitions.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -73,14 +71,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
-      ),
-      // TODO Floating action button should be different for every screen
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => Navigator.of(context).push(createRoute(AddClubPage())),
-        tooltip: 'Add a Club',
-        backgroundColor: _c.mainColor,
-        hoverColor: _c.secondaryColor,
-        child: const Icon(Icons.add),
       ),
     );
   }

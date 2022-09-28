@@ -5,21 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3038bda6-177e-4fca-a17a-f71a8c10a8b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/view/add_reservation_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/confirmation_dialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/date_picker.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/time_picker.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/album.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/album.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/models.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/models.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/account_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/account_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/club_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/club_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/clubs_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/clubs_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/reservation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/reservation_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/reservations_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/reservations_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +50,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -64,5 +70,16 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

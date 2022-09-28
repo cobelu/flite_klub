@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flite_klub/model/models.dart';
+import 'package:flite_klub/view/confirmation_dialog.dart';
 import 'package:flutter/material.dart';
 
 class ClubPage extends StatelessWidget {
@@ -21,12 +22,14 @@ class ClubPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextButton(
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.red,
-              ),
-              child: const Text("Leave"),
-              onPressed: () => {log("Leaving club...")},
-            ),
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.red,
+                ),
+                child: const Text("Leave"),
+                onPressed: () => showDialog<String>(
+                    context: context,
+                    builder: (BuildContext context) =>
+                        showConfirmationDialog<Club>(context))),
           ],
         ),
       ),
