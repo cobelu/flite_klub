@@ -1,10 +1,10 @@
-import 'package:flite_klub/view/add_club_screen.dart';
-import 'package:flite_klub/view/constants.dart';
-import 'package:flutter/material.dart';
-import 'package:flite_klub/view/reservations_screen.dart';
 import 'package:flite_klub/view/account_screen.dart';
+import 'package:flite_klub/view/add_club_screen.dart';
 import 'package:flite_klub/view/clubs_screen.dart';
+import 'package:flite_klub/view/constants.dart';
+import 'package:flite_klub/view/reservations_screen.dart';
 import 'package:flite_klub/view/transitions.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
 

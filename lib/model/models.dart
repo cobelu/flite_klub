@@ -1,6 +1,7 @@
-import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:core';
+
+import 'package:http/http.dart' as http;
 
 // --------------------
 // Aircraft
@@ -137,8 +138,10 @@ class Reservation {
   factory Reservation.fromJson(Map<String, dynamic> json) {
     return Reservation(
       id: json['id'],
-      aircraft: json['aircraft'], // TODO Aircraft parsing
-      member: json['member'], // TODO Member parsing
+      aircraft: json['aircraft'],
+      // TODO Aircraft parsing
+      member: json['member'],
+      // TODO Member parsing
       startTime: json['start'],
       endTime: json['end'],
     );
