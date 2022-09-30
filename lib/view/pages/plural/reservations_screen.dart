@@ -1,8 +1,6 @@
 import 'package:flite_klub/model/models.dart';
+import 'package:flite_klub/view/cards/reservation_card.dart';
 import 'package:flutter/material.dart';
-
-import '../singular/reservation_screen.dart';
-import '../../transitions.dart';
 
 class ReservationsPage extends Container {
   ReservationsPage({super.key});
@@ -17,11 +15,7 @@ class ReservationsPage extends Container {
       padding: const EdgeInsets.all(20),
       itemCount: entries.length,
       itemBuilder: (BuildContext context, int i) {
-        return ListTile(
-          title: Text(entries[i].toString()),
-          onTap: () =>
-              Navigator.of(context).push(createRoute(ReservationPage())),
-        );
+        return ReservationCard(reservation: entries[i]);
       },
     );
   }

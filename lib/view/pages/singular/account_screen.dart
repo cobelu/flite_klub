@@ -14,9 +14,19 @@ class AccountPage extends Container {
           user: User.example(),
         ),
         Column(
-          children: const [
-            Text('Manage Profile'),
-            Text('Manage Clubs'),
+          children: [
+            ListTile(
+              title: const Text("Manage Clubs"),
+              onTap: () => {},
+            ),
+            ListTile(
+              title: const Text("Manage Account"),
+              onTap: () => {},
+            ),
+            ListTile(
+              title: const Text("App Settings"),
+              onTap: () => {},
+            ),
           ],
         ),
       ],

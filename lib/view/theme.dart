@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_color_generator/material_color_generator.dart';
 
 var duskRed = const Color(0xFFBD2428);
 var dawnOrange = const Color(0xFFdb5527);
@@ -10,7 +9,6 @@ var midnightIndigo = const Color(0xFF21274d);
 
 class FliteKlubTheme {
   static ThemeData get lightTheme {
-    MaterialColor materialPrimary = generateMaterialColor(color: duskRed);
     return ThemeData(
         // primaryColor: materialPrimary,
         // primarySwatch: materialPrimary,

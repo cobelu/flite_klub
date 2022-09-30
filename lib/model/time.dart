@@ -1,23 +1,11 @@
-import 'package:flutter/cupertino.dart';
-
 enum Minutes {
-  zero,
-  fifteen,
-  thirty,
-  fortyFive,
-}
+  zero("00"),
+  fifteen("15"),
+  thirty("30"),
+  fortyFive("45"),
+  ;
 
-int minutesToInt(Minutes minutes) {
-  switch (minutes) {
-    case Minutes.zero:
-      return 0;
-    case Minutes.fifteen:
-      return 15;
-    case Minutes.thirty:
-      return 30;
-    case Minutes.fortyFive:
-      return 45;
-    default:
-      return -1;
-  }
+  const Minutes(this.value);
+
+  final String value;
 }

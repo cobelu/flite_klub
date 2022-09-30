@@ -1,6 +1,9 @@
 import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
+import '../add_reservation_screen.dart';
+import '../transitions.dart';
+
 class ReservationCard extends StatelessWidget {
   final Reservation reservation;
 
@@ -17,13 +20,10 @@ class ReservationCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           ListTile(
-            leading: const Image(
-              image: NetworkImage(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
-              ),
-            ),
             title: Text(reservation.aircraft.name),
             subtitle: Text(subtitle),
+            onTap: () => Navigator.of(context)
+                .push(createRoute(const AddReservationPage())),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
