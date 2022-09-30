@@ -1,7 +1,5 @@
-import 'dart:developer';
-
 import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/confirmation_dialog.dart';
+import 'package:flite_klub/view/popups/confirmation_dialog.dart';
 import 'package:flutter/material.dart';
 
 class ClubPage extends StatelessWidget {

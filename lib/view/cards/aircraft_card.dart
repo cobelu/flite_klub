@@ -1,6 +1,7 @@
 import 'package:flite_klub/misc.dart';
 import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/club_screen.dart';
+import 'package:flite_klub/view/add_reservation_screen.dart';
+import 'package:flite_klub/view/pages/singular/club_screen.dart';
 import 'package:flite_klub/view/transitions.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,8 @@ class AircraftCard extends StatelessWidget {
       ),
       title: Text(aircraft.name),
       subtitle: Text(formatAircraft(aircraft)),
-      onTap: () => {Navigator.of(context).push(createRoute(ClubPage()))},
+      onTap: () =>
+          {Navigator.of(context).push(createRoute(AddReservationPage()))},
     );
   }
 }

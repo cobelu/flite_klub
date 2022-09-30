@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3038bda6-177e-4fca-a17a-f71a8c10a8b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/view/cards/aircraft_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/view/pages/plural/aircrafts_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/pages/singular/manage_profile_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/account_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/account_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/models.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/models.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/add_reservation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/add_reservation_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/aircraft_card.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/club_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/cards/club_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/club_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/club_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/clubs_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/plural/clubs_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/confirmation_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/popups/confirmation_dialog.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/contact_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/cards/contact_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/date_picker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/popups/date_picker.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/reservation_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/cards/reservation_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/reservation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/reservation_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/reservations_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/plural/reservations_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/time_picker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/popups/time_picker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/cards/aircraft_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/cards/aircraft_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/cards/club_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/cards/club_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/club_aircraft_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/club_aircraft_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/pages/singular/account_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/account_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/pages/singular/club_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/club_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/pages/singular/reservation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/reservation_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/popups/confirmation_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/popups/confirmation_dialog.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/theme.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

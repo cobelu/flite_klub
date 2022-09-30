@@ -10,11 +10,25 @@ var midnightIndigo = const Color(0xFF21274d);
 
 class FliteKlubTheme {
   static ThemeData get lightTheme {
+    MaterialColor materialPrimary = generateMaterialColor(color: duskRed);
     return ThemeData(
-      primaryColor: generateMaterialColor(color: duskRed),
-      bottomAppBarColor: generateMaterialColor(color: duskRed),
-      scaffoldBackgroundColor: Colors.white,
-      // fontFamily: 'Montserrat',
-    );
+        // primaryColor: materialPrimary,
+        // primarySwatch: materialPrimary,
+        // bottomAppBarColor: duskRed,
+        colorScheme: ColorScheme(
+      primary: duskRed,
+      secondary: dawnOrange,
+      brightness: Brightness.light,
+      onPrimary: Colors.white,
+      onSecondary: Colors.white,
+      error: Colors.red,
+      onError: Colors.white,
+      background: Colors.white,
+      onBackground: duskRed,
+      surface: Colors.white,
+      onSurface: Colors.black,
+    )
+        // fontFamily: 'Montserrat',
+        );
   }
 }

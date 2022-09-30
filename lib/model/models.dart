@@ -69,7 +69,7 @@ class Club {
   final int id;
   final String name;
   final String location;
-  final Aircraft aircraft;
+  final List<Aircraft> aircraft;
 
   const Club({
     required this.id,
@@ -88,7 +88,7 @@ class Club {
       id: json['id'],
       name: json['name'],
       location: json['location'],
-      aircraft: Aircraft.fromJson(json['aircraft']), // TODO Returns list
+      aircraft: [Aircraft.fromJson(json['aircraft'])], // TODO Returns list
     );
   }
 
@@ -97,7 +97,7 @@ class Club {
       id: 1,
       name: "TAC",
       location: "KGYI",
-      aircraft: Aircraft.example(),
+      aircraft: [Aircraft.example()],
     );
   }
 }

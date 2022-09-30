@@ -15,9 +15,8 @@ class AccountPage extends Container {
         ),
         Column(
           children: const [
-            Text('Something'),
-            Text('Something else'),
-            Text('Yet another thing'),
+            Text('Manage Profile'),
+            Text('Manage Clubs'),
           ],
         ),
       ],

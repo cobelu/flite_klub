@@ -1,5 +1,5 @@
 import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/club_screen.dart';
+import 'package:flite_klub/view/club_aircraft_screen.dart';
 import 'package:flite_klub/view/transitions.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,8 @@ class ClubCard extends StatelessWidget {
       ),
       title: Text(club.name),
       subtitle: Text(club.location),
-      onTap: () => {Navigator.of(context).push(createRoute(ClubPage()))},
+      onTap: () =>
+          {Navigator.of(context).push(createRoute(ClubAircraftPage()))},
     );
   }
 }

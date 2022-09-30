@@ -12,6 +12,9 @@ AlertDialog showConfirmationDialog<T>(BuildContext context) {
       ),
       TextButton(
         onPressed: () => Navigator.pop(context, 'Yes'),
+        style: TextButton.styleFrom(
+          foregroundColor: Colors.red,
+        ),
         child: const Text('Yes'),
       ),
     ],
