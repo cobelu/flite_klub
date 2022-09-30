@@ -6,11 +6,11 @@ import 'cards/aircraft_card.dart';
 class ClubAircraftPage extends StatelessWidget {
   ClubAircraftPage({super.key});
 
-  final _club = Club.example();
+  final Club _club = Club.example();
 
   @override
   Widget build(BuildContext context) {
-    List<Aircraft> entries = _club.aircraft;
+    final List<Aircraft> entries = _club.aircraft;
     return Scaffold(
       appBar: AppBar(
         title: Text(_club.name),

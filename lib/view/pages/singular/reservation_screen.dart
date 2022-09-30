@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:flite_klub/misc.dart';
-import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
+import '../../../misc.dart';
+import '../../../model/models.dart';
 import '../../popups/confirmation_dialog.dart';
 
 class ReservationPage extends Container {

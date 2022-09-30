@@ -1,8 +1,9 @@
-import 'package:flite_klub/view/theme.dart';
-import 'package:flite_klub/view/pages/singular/account_screen.dart';
-import 'package:flite_klub/view/pages/plural/clubs_screen.dart';
-import 'package:flite_klub/view/pages/plural/reservations_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'view/pages/plural/clubs_screen.dart';
+import 'view/pages/plural/reservations_screen.dart';
+import 'view/pages/singular/account_screen.dart';
+import 'view/theme.dart';
 
 void main() => runApp(const MyApp());
 

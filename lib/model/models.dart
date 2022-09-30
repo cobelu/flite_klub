@@ -1,18 +1,12 @@
 import 'dart:convert';
 import 'dart:core';
 
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
 
 // --------------------
 // Aircraft
 // --------------------
 class Aircraft {
-  final int id;
-  final String name;
-  final int year;
-  final String make;
-  final String model;
-
   const Aircraft({
     required this.id,
     required this.name,
@@ -21,25 +15,31 @@ class Aircraft {
     required this.model,
   });
 
-  factory Aircraft.fromJson(Map<String, dynamic> json) {
+  factory Aircraft.fromJson(dynamic json) {
     return Aircraft(
-      id: json['id'],
-      name: json['id'],
-      year: json['year'],
-      make: json['make'],
-      model: json['model'],
+      id: json['id'] as int,
+      name: json['name'] as String,
+      year: json['year'] as int,
+      make: json['make'] as String,
+      model: json['model'] as String,
     );
   }
 
   factory Aircraft.example() {
     return const Aircraft(
       id: 1,
-      name: "Snoopy",
+      name: 'Snoopy',
       year: 1967,
-      make: "Cessna",
-      model: "172",
+      make: 'Cessna',
+      model: '172',
     );
   }
+
+  final int id;
+  final String name;
+  final int year;
+  final String make;
+  final String model;
 
   @override
   String toString() {
@@ -48,8 +48,8 @@ class Aircraft {
 }
 
 Future<Aircraft> fetchAircraft() async {
-  final response = await http
-      .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
+  final Response response =
+      await get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
@@ -66,11 +66,6 @@ Future<Aircraft> fetchAircraft() async {
 // Club
 // --------------------
 class Club {
-  final int id;
-  final String name;
-  final String location;
-  final List<Aircraft> aircraft;
-
   const Club({
     required this.id,
     required this.name,
@@ -78,33 +73,41 @@ class Club {
     required this.aircraft,
   });
 
+  factory Club.example() {
+    return Club(
+      id: 1,
+      name: 'TAC',
+      location: 'KGYI',
+      aircraft: <Aircraft>[Aircraft.example()],
+    );
+  }
+
+  factory Club.fromJson(dynamic json) {
+    return Club(
+      id: json['id'] as int,
+      name: json['name'] as String,
+      location: json['location'] as String,
+      aircraft: <Aircraft>[
+        Aircraft.fromJson(json['aircraft']),
+      ],
+      // TODO Returns list
+    );
+  }
+
+  final int id;
+  final String name;
+  final String location;
+  final List<Aircraft> aircraft;
+
   @override
   String toString() {
     return name;
   }
-
-  factory Club.fromJson(Map<String, dynamic> json) {
-    return Club(
-      id: json['id'],
-      name: json['name'],
-      location: json['location'],
-      aircraft: [Aircraft.fromJson(json['aircraft'])], // TODO Returns list
-    );
-  }
-
-  factory Club.example() {
-    return Club(
-      id: 1,
-      name: "TAC",
-      location: "KGYI",
-      aircraft: [Aircraft.example()],
-    );
-  }
 }
 
 Future<Club> fetchClub() async {
-  final response = await http
-      .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
+  final Response response =
+      await get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
@@ -121,12 +124,6 @@ Future<Club> fetchClub() async {
 // Reservation
 // --------------------
 class Reservation {
-  final int id;
-  final Aircraft aircraft;
-  final User member;
-  final DateTime startTime;
-  final DateTime endTime;
-
   const Reservation({
     required this.id,
     required this.aircraft,
@@ -135,15 +132,15 @@ class Reservation {
     required this.endTime,
   });
 
-  factory Reservation.fromJson(Map<String, dynamic> json) {
+  factory Reservation.fromJson(dynamic json) {
     return Reservation(
-      id: json['id'],
-      aircraft: json['aircraft'],
+      id: json['id'] as int,
+      aircraft: json['aircraft'] as Aircraft,
       // TODO Aircraft parsing
-      member: json['member'],
+      member: json['member'] as User,
       // TODO Member parsing
-      startTime: json['start'],
-      endTime: json['end'],
+      startTime: json['start'] as DateTime,
+      endTime: json['end'] as DateTime,
     );
   }
 
@@ -157,6 +154,12 @@ class Reservation {
     );
   }
 
+  final int id;
+  final Aircraft aircraft;
+  final User member;
+  final DateTime startTime;
+  final DateTime endTime;
+
   @override
   String toString() {
     return '$startTime - $endTime';
@@ -164,8 +167,8 @@ class Reservation {
 }
 
 Future<Reservation> fetchReservation() async {
-  final response = await http
-      .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
+  final Response response =
+      await get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1'));
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,
@@ -182,10 +185,6 @@ Future<Reservation> fetchReservation() async {
 // User
 // --------------------
 class User {
-  final int id;
-  final String firstName;
-  final String lastName;
-
   const User({
     required this.id,
     required this.firstName,
@@ -195,8 +194,12 @@ class User {
   factory User.example() {
     return const User(
       id: 1,
-      firstName: "Connor",
-      lastName: "Luckett",
+      firstName: 'Connor',
+      lastName: 'Luckett',
     );
   }
+
+  final int id;
+  final String firstName;
+  final String lastName;
 }

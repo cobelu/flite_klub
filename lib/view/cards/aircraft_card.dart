@@ -1,9 +1,9 @@
-import 'package:flite_klub/misc.dart';
-import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/add_reservation_screen.dart';
-import 'package:flite_klub/view/pages/singular/club_screen.dart';
-import 'package:flite_klub/view/transitions.dart';
 import 'package:flutter/material.dart';
+
+import '../../misc.dart';
+import '../../model/models.dart';
+import '../add_reservation_screen.dart';
+import '../transitions.dart';
 
 class AircraftCard extends StatelessWidget {
   const AircraftCard({

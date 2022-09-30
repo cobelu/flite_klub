@@ -1,6 +1,7 @@
-import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/cards/club_card.dart';
 import 'package:flutter/material.dart';
+
+import '../../../model/models.dart';
+import '../../cards/club_card.dart';
 
 class ClubsPage extends StatelessWidget {
   ClubsPage({super.key});

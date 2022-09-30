@@ -1,6 +1,6 @@
-import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
+import '../../../model/models.dart';
 import '../../cards/aircraft_card.dart';
 
 class AircraftPage extends StatelessWidget {

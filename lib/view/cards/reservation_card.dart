@@ -1,6 +1,6 @@
-import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
+import '../../model/models.dart';
 import '../add_reservation_screen.dart';
 import '../transitions.dart';
 

@@ -11,44 +11,47 @@ class ManageAccountPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Card(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                const ListTile(
-                  leading: Icon(Icons.inventory),
-                  title: Text('Export My Data'),
-                  subtitle: Text('Coming Soon'),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: const <Widget>[
-                    SizedBox(width: 8),
-                  ],
-                ),
-              ],
-            ),
+          profileCard(
+            Icons.inventory,
+            'Export My Data',
+            'Coming Soon',
+            () => {},
           ),
-          Card(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                const ListTile(
-                  leading: Icon(Icons.delete_forever),
-                  title: Text('Delete My Account'),
-                  subtitle: Text('Coming Soon'),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: const <Widget>[
-                    SizedBox(width: 8),
-                  ],
-                ),
-              ],
-            ),
-          )
+          profileCard(
+            Icons.delete_forever,
+            'Delete My Account',
+            'Coming Soon',
+            () => {},
+          ),
         ],
       ),
     );
   }
+}
+
+Card profileCard(
+  IconData icon,
+  String title,
+  String subtitle,
+  void Function()? onTap,
+) {
+  return Card(
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        ListTile(
+          leading: Icon(icon),
+          title: Text(title),
+          subtitle: Text(subtitle),
+          onTap: onTap,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: const <Widget>[
+            SizedBox(width: 8),
+          ],
+        ),
+      ],
+    ),
+  );
 }

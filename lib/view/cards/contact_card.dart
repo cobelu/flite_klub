@@ -1,5 +1,6 @@
-import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
+
+import '../../model/models.dart';
 
 class ContactCard extends StatelessWidget {
   final User user;

@@ -1,7 +1,8 @@
-import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:flite_klub/model/time.dart';
+
+import '../model/models.dart';
+import '../model/time.dart';
 
 class AddReservationPage extends StatefulWidget {
   const AddReservationPage({super.key});

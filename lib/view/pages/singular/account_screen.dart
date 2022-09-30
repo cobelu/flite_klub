@@ -1,12 +1,11 @@
-import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/transitions.dart';
-import 'package:flite_klub/view/pages/management/manage_clubs_screen.dart';
-import 'package:flite_klub/view/pages/management/manage_account_screen.dart';
-import 'package:flite_klub/view/pages/management/manage_settings_screen.dart';
-
 import 'package:flutter/material.dart';
 
+import '../../../model/models.dart';
 import '../../cards/contact_card.dart';
+import '../../transitions.dart';
+import '../management/manage_account_screen.dart';
+import '../management/manage_clubs_screen.dart';
+import '../management/manage_settings_screen.dart';
 
 class AccountPage extends Container {
   AccountPage({super.key});

@@ -1,6 +1,7 @@
-import 'package:flite_klub/model/models.dart';
-import 'package:flite_klub/view/cards/reservation_card.dart';
 import 'package:flutter/material.dart';
+
+import '../../../model/models.dart';
+import '../../cards/reservation_card.dart';
 
 class ReservationsPage extends Container {
   ReservationsPage({super.key});

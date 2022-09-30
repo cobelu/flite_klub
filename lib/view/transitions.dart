@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
-Route createRoute(Widget page) {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => page,
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      const begin = Offset(0.0, 1.0);
-      const end = Offset.zero;
-      const curve = Curves.ease;
+Route<dynamic> createRoute(Widget page) {
+  return PageRouteBuilder<dynamic>(
+    pageBuilder: (
+      BuildContext context,
+      Animation<dynamic> animation,
+      Animation<dynamic> secondaryAnimation,
+    ) =>
+        page,
+    transitionsBuilder: (
+      BuildContext context,
+      Animation<dynamic> animation,
+      Animation<dynamic> secondaryAnimation,
+      Widget child,
+    ) {
+      const Offset begin = Offset(0.0, 1.0);
+      const Offset end = Offset.zero;
+      const Curve curve = Curves.ease;
 
       var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
 

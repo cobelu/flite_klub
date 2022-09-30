@@ -1,7 +1,8 @@
-import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
-import 'package:flite_klub/view/pages/add_club_screen.dart';
-import 'package:flite_klub/view/transitions.dart';
+
+import '../../../model/models.dart';
+import '../../transitions.dart';
+import '../add_club_screen.dart';
 
 class ManageClubsPage extends StatelessWidget {
   const ManageClubsPage({super.key});
