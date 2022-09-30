@@ -48,7 +48,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('FliteKlub'),
-        backgroundColor: Colors.amber[900],
+        backgroundColor: const Color(0x00bd2428),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
