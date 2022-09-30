@@ -15,10 +15,8 @@ class _AddReservationPageState extends State<AddReservationPage> {
 
   @override
   Widget build(BuildContext context) {
-    final DateTime start = _reservation.startTime;
-    final DateTime end = _reservation.endTime;
     final DateFormat formatter = DateFormat('yyyy-MM-dd');
-    final DateFormat timeFormatter = DateFormat('Hm');
+    // final DateFormat timeFormatter = DateFormat('Hm');
     // TODO Dynamic string
     String today = formatter.format(DateTime.now());
     return Scaffold(
@@ -51,12 +49,26 @@ class _AddReservationPageState extends State<AddReservationPage> {
             ]),
             const SizedBox(height: 10),
             const TextField(
-              obscureText: true,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'Notes',
               ),
             ),
+            Row(
+              children: [
+                TextButton(
+                  onPressed: () => {Navigator.of(context).pop()},
+                  child: const Text('Cancel'),
+                ),
+                TextButton(
+                  onPressed: () => {
+                    // TODO Do something and go away
+                    Navigator.of(context).pop()
+                  },
+                  child: const Text('Submit'),
+                ),
+              ],
+            )
           ],
         ),
       ),

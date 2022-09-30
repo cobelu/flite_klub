@@ -8,16 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3038bda6-177e-4fca-a17a-f71a8c10a8b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/time.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/time.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/add_reservation_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/add_reservation_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/cards/reservation_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/cards/reservation_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/pages/plural/reservations_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/plural/reservations_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/pages/singular/account_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/pages/singular/account_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/transitions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/transitions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
