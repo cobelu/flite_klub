@@ -16,7 +16,6 @@ class ReservationPage extends Container {
     return Scaffold(
       appBar: AppBar(
         title: Text(_reservation.aircraft.name),
-        backgroundColor: Colors.amber[900],
       ),
       body: Center(
         child: Column(

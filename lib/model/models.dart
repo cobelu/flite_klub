@@ -156,6 +156,11 @@ class Reservation {
       endTime: DateTime.now().add(const Duration(hours: 1)),
     );
   }
+
+  @override
+  String toString() {
+    return '$startTime - $endTime';
+  }
 }
 
 Future<Reservation> fetchReservation() async {

@@ -1,6 +1,6 @@
+import 'package:flite_klub/theme.dart';
 import 'package:flite_klub/view/account_screen.dart';
 import 'package:flite_klub/view/clubs_screen.dart';
-import 'package:flite_klub/view/constants.dart';
 import 'package:flite_klub/view/reservations_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: _title,
-      home: MyStatefulWidget(),
+      home: const MyStatefulWidget(),
+      theme: FliteKlubTheme.lightTheme,
     );
   }
 }
@@ -29,7 +30,6 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
-  final Constants _c = Constants.constants();
 
   final List<Widget> _widgetOptions = <Widget>[
     ReservationsPage(),
@@ -48,7 +48,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('FliteKlub'),
-        backgroundColor: const Color(0x00bd2428),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -69,7 +68,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
     );

@@ -9,7 +9,7 @@ Route<DateTime> timePickerRoute(BuildContext context) {
       int minute = now.minute;
       return TimePickerDialog(
         restorationId: 'time_picker_dialog',
-        initialEntryMode: TimePickerEntryMode.input,
+        initialEntryMode: TimePickerEntryMode.inputOnly,
         initialTime: TimeOfDay(hour: hour, minute: minute),
       );
     },
