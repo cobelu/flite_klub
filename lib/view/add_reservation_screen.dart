@@ -31,7 +31,7 @@ class ReservationPage extends Container {
               onPressed: () => {log("Editing a Reservation...")},
             ),
             const SizedBox(height: 10),
-            const TextField( 
+            const TextField(
               obscureText: true,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),

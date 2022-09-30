@@ -1,7 +1,7 @@
 import 'package:flite_klub/model/models.dart';
 import 'package:flutter/material.dart';
 
-import 'contact_card.dart';
+import '../../cards/contact_card.dart';
 
 class AccountPage extends Container {
   AccountPage({super.key});
