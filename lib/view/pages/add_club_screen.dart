@@ -24,11 +24,11 @@ class AddClubPage extends StatelessWidget {
           )
         ],
       ),
-      body: TextField(
+      body: const TextField(
         // controller: editingController,
         decoration: InputDecoration(
-          labelText: "Search",
-          hintText: "Search",
+          labelText: 'Search',
+          hintText: 'Search',
           prefixIcon: Icon(Icons.search),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(25.0)),

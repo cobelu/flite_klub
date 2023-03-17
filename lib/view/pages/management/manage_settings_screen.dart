@@ -9,7 +9,7 @@ class ManageSettingsPage extends StatefulWidget {
 
 class _ManageSettingsPageState extends State<ManageSettingsPage> {
   bool darkMode = false;
-  // TODO Dark mode
+  // TODO(cobelu): Dark mode
   @override
   Widget build(BuildContext context) {
     return Scaffold(

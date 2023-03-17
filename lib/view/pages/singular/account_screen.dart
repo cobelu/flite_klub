@@ -20,20 +20,20 @@ class AccountPage extends Container {
         Column(
           children: [
             ListTile(
-              title: const Text("Manage Clubs"),
+              title: const Text('Manage Clubs'),
               onTap: () => {
                 Navigator.of(context).push(createRoute(const ManageClubsPage()))
               },
             ),
             ListTile(
-              title: const Text("Manage Account"),
+              title: const Text('Manage Account'),
               onTap: () => {
                 Navigator.of(context)
                     .push(createRoute(const ManageAccountPage()))
               },
             ),
             ListTile(
-              title: const Text("App Settings"),
+              title: const Text('App Settings'),
               onTap: () => {
                 Navigator.of(context)
                     .push(createRoute(const ManageSettingsPage()))

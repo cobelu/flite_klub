@@ -6,7 +6,7 @@ import '../../popups/confirmation_dialog.dart';
 class ClubPage extends StatelessWidget {
   ClubPage({super.key});
 
-  final _club = Club.example();
+  final Club _club = Club.example();
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class ClubPage extends StatelessWidget {
               style: TextButton.styleFrom(
                 foregroundColor: Colors.red,
               ),
-              child: const Text("Leave"),
+              child: const Text('Leave'),
               onPressed: () => showDialog<String>(
                 context: context,
                 builder: (BuildContext context) =>

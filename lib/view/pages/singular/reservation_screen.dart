@@ -37,7 +37,7 @@ class ReservationPage extends Container {
                 style: TextButton.styleFrom(
                   foregroundColor: Colors.red,
                 ),
-                child: const Text("Delete"),
+                child: const Text('Delete'),
                 onPressed: () => showDialog<String>(
                     context: context,
                     builder: (BuildContext context) =>

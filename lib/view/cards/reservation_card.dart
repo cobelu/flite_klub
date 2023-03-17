@@ -5,16 +5,16 @@ import '../add_reservation_screen.dart';
 import '../transitions.dart';
 
 class ReservationCard extends StatelessWidget {
-  final Reservation reservation;
-
   const ReservationCard({
     super.key,
     required this.reservation,
   });
 
+  final Reservation reservation;
+
   @override
   Widget build(BuildContext context) {
-    String subtitle = '${reservation.startTime} - ${reservation.endTime}';
+    final String subtitle = '${reservation.startTime} - ${reservation.endTime}';
     return Card(
       child: Column(
         mainAxisSize: MainAxisSize.min,

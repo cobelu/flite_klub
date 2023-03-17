@@ -17,9 +17,8 @@ class _AddReservationPageState extends State<AddReservationPage> {
   @override
   Widget build(BuildContext context) {
     final DateFormat formatter = DateFormat('yyyy-MM-dd');
-    // final DateFormat timeFormatter = DateFormat('Hm');
-    // TODO Dynamic string
-    String today = formatter.format(DateTime.now());
+    // TODO(cobelu): Dynamic string
+    final String today = formatter.format(DateTime.now());
     return Scaffold(
       appBar: AppBar(
         title: Text(_reservation.aircraft.name),

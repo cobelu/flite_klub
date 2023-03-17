@@ -38,7 +38,7 @@ class AircraftCard extends StatelessWidget {
       title: Text(aircraft.name),
       subtitle: Text(formatAircraft(aircraft)),
       onTap: () =>
-          {Navigator.of(context).push(createRoute(AddReservationPage()))},
+          {Navigator.of(context).push(createRoute(const AddReservationPage()))},
     );
   }
 }

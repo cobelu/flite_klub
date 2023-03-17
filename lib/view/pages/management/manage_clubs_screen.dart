@@ -9,7 +9,7 @@ class ManageClubsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Club club = Club.example();
+    final Club club = Club.example();
 
     return Scaffold(
       appBar: AppBar(

@@ -90,7 +90,7 @@ class Club {
       aircraft: <Aircraft>[
         Aircraft.fromJson(json['aircraft']),
       ],
-      // TODO Returns list
+      // TODO(cobelu): Returns list
     );
   }
 
@@ -136,9 +136,9 @@ class Reservation {
     return Reservation(
       id: json['id'] as int,
       aircraft: json['aircraft'] as Aircraft,
-      // TODO Aircraft parsing
+      // TODO(cobelu): Aircraft parsing
       member: json['member'] as User,
-      // TODO Member parsing
+      // TODO(cobelu): Member parsing
       startTime: json['start'] as DateTime,
       endTime: json['end'] as DateTime,
     );

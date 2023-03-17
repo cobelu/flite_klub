@@ -4,6 +4,6 @@ class Controller {
   const Controller({key});
 
   List<Aircraft> getAircraft() {
-    return [];
+    return <Aircraft>[];
   }
 }
